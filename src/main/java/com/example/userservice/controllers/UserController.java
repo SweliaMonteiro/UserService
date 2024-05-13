@@ -45,9 +45,14 @@ public class UserController {
 
     // This method is used to validate the token and return the user details
     @GetMapping("/validate/{token}")
-    public ResponseEntity<UserDto> validateToken(@PathVariable("token") String token) throws InvalidTokenException {
-        User user = userService.validateToken(token);
-        return new ResponseEntity<>(UserDto.from(user), HttpStatus.OK);
+    public ResponseEntity<UserDto> validateToken(@PathVariable("token") String token) {
+        try {
+            User user = userService.validateToken(token);
+            return new ResponseEntity<>(UserDto.from(user), HttpStatus.OK);
+        }
+        catch (InvalidTokenException e) {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
     }
 
 }
