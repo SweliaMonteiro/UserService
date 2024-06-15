@@ -1,4 +1,4 @@
-package com.example.userservice.dtos;
+package com.example.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,7 +6,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class LogInRequestDto {
+public class SignUpRequestDto {
+
+    private String name;
 
     private String email;
 

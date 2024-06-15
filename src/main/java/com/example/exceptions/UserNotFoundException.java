@@ -1,4 +1,4 @@
-package com.example.userservice.exceptions;
+package com.example.exceptions;
 
 public class UserNotFoundException extends Exception {
     public UserNotFoundException(String message) {

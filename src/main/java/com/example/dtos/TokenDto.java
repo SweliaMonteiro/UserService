@@ -1,7 +1,7 @@
-package com.example.userservice.dtos;
+package com.example.dtos;
 
-import com.example.userservice.models.Token;
-import com.example.userservice.models.User;
+import com.example.models.Token;
+import com.example.models.User;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.Date;

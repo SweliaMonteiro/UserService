@@ -1,5 +1,13 @@
-package com.example.userservice.services;
+package com.example.services;
 
+import com.example.exceptions.InvalidTokenException;
+import com.example.exceptions.PasswordNotMatchingException;
+import com.example.exceptions.UserAlreadyExistsException;
+import com.example.exceptions.UserNotFoundException;
+import com.example.models.Token;
+import com.example.models.User;
+import com.example.repositories.TokenRepository;
+import com.example.repositories.UserRepository;
 import com.example.userservice.exceptions.*;
 import com.example.userservice.models.*;
 import com.example.userservice.repositories.*;

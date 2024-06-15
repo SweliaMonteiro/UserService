@@ -1,6 +1,10 @@
-package com.example.userservice.exceptionHandlers;
+package com.example.exceptionHandlers;
 
-import com.example.userservice.dtos.ExceptionDto;
+import com.example.dtos.ExceptionDto;
+import com.example.exceptions.InvalidTokenException;
+import com.example.exceptions.PasswordNotMatchingException;
+import com.example.exceptions.UserAlreadyExistsException;
+import com.example.exceptions.UserNotFoundException;
 import com.example.userservice.exceptions.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

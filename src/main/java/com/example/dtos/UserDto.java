@@ -1,9 +1,9 @@
-package com.example.userservice.dtos;
+package com.example.dtos;
 
-import com.example.userservice.models.User;
+import com.example.models.User;
 import lombok.Getter;
 import lombok.Setter;
-import com.example.userservice.models.Role;
+import com.example.models.Role;
 import java.util.List;
 
 

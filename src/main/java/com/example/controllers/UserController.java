@@ -1,10 +1,15 @@
-package com.example.userservice.controllers;
+package com.example.controllers;
 
+import com.example.dtos.*;
+import com.example.exceptions.InvalidTokenException;
+import com.example.exceptions.PasswordNotMatchingException;
+import com.example.exceptions.UserAlreadyExistsException;
+import com.example.exceptions.UserNotFoundException;
+import com.example.models.Token;
+import com.example.models.User;
 import com.example.userservice.dtos.*;
 import com.example.userservice.exceptions.*;
-import com.example.userservice.models.Token;
-import com.example.userservice.models.User;
-import com.example.userservice.services.UserService;
+import com.example.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

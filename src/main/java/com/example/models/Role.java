@@ -1,4 +1,4 @@
-package com.example.userservice.models;
+package com.example.models;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;
