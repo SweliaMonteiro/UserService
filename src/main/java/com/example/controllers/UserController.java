@@ -7,8 +7,6 @@ import com.example.exceptions.UserAlreadyExistsException;
 import com.example.exceptions.UserNotFoundException;
 import com.example.models.Token;
 import com.example.models.User;
-import com.example.userservice.dtos.*;
-import com.example.userservice.exceptions.*;
 import com.example.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
